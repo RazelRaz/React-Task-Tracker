@@ -31,6 +31,10 @@ Follow these instructions to get a local copy of the project up and running on y
 - Click the checkbox beside a task to mark it as completed. The task's title will appear struck through.
 - Click the trash icon to delete a task.
 
+## Deployment
+
+This project is deployed and accessible on Netlify at the following URL: [React Task Tracker](https://64b55fe58d46fb1ceb7f22f5--jocular-praline-7b02d9.netlify.app/)
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
@@ -38,4 +42,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
