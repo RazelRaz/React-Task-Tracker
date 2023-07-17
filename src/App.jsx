@@ -18,6 +18,11 @@ function App() {
     ])
   }
 
+  const deleteTaskbyId = (taskId) => {
+    const newTask = tasks.filter(task => task.id != taskId)
+    setTasks(newTask)
+  }
+
   const toggleTaskCompletedById = (taskId) => {
     const newTasks = tasks.map( task => {
       if(task.id === taskId){
@@ -34,7 +39,7 @@ function App() {
   return (
     <>
       <Header onAddTask={addTask}></Header>
-      <Tasks tasks={tasks} onComplete={toggleTaskCompletedById}></Tasks>
+      <Tasks tasks={tasks} onComplete={toggleTaskCompletedById} onDelete={deleteTaskbyId}></Tasks>
     </>
   )
 

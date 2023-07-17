@@ -1,7 +1,7 @@
 import Task from '../Task/Task';
 import './Tasks.css'
 
-const Tasks = ({ tasks, onComplete }) => {
+const Tasks = ({ tasks, onComplete, onDelete }) => {
 
     const taskQuantity = tasks.length;
     const taskCompleted = tasks.filter(task => task.isCompleted).length;
@@ -22,7 +22,7 @@ const Tasks = ({ tasks, onComplete }) => {
             <div className='list'>
                 {
                     tasks.map(task => (
-                        <Task key={task.id} task={task} onComplete={onComplete}></Task>
+                        <Task key={task.id} task={task} onComplete={onComplete} onDelete={onDelete}></Task>
                     ))
                 }
                 
